@@ -123,3 +123,16 @@ freq <- sort(colSums(as.matrix(dtm)), decreasing=TRUE)
 #VIEW FREQUENCY
 View(data.frame(freq))
 
+
+
+#Create word cloud
+
+set.seed(1234)
+grayLevels<-gray((freq*10/(max(freq)*10)))
+word.cloud<-wordcloud(words=names(freq),freq=freq,min.freq=10,random.order=F,colors=brewer.pal(8, "Spectral"))
+
+
+
+
+
+#ADDITIONAL FILTER
