@@ -69,7 +69,7 @@ docs <- tm_map(docs, removePunctuation)
 #Removing numbers:
 
 docs <- tm_map(docs, removeNumbers)   
-docs<-tm_map(docs,removeWords,c("Love","gssc","qbe"))
+docs<-tm_map(docs,removeWords,c("is","the","me"))
 
 #Converting to lowercase:
 #QP1 <- tolower(QP)  
