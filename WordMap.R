@@ -80,10 +80,6 @@ docs <- tm_map(docs, tolower)
 docs <- tm_map(docs, removeWords, stopwords("english")) 
 
 
-#Removing particular words:
-
-docs <- tm_map(docs, removeWords, c("cube","net","taguig","makati","visayas","cebu","december","kgell","aeron","archie","padillo","rubio","saavedra","ang","atienza","mikhail","dayrit","marinelle","becky","elbert","maceda","mia","aboi","alvizo","bernal","janiko","melendez","iambeckyrunner","manelski","elmercalledo","elmer","calledo","manzano","kyleuy","eduard","edonglovesjinky","angelo","ancheth","kathleen","peterson","february","marie","aug","more", "reviews","reply","retweet","like","likes","retweet","share","retweets","city","national","capital","region","central","republic","photo","january","may","oct","dec","feb","others","apr","jan","comments","mar","nov","jul","jun","sep","wow","sad", "angry","commentshare","haha","philippines"))
-
 
 #Stripping unnecesary whitespace from your documents:
 docs <- tm_map(docs, stripWhitespace)   
